@@ -64,7 +64,6 @@ Food,Pizza,12.99,1000,4.6
 | Frontend | React, Tailwind CSS, Recharts, Framer Motion |
 | Backend | FastAPI, Python, Pandas |
 | AI | OpenAI GPT-4.1-mini via LangChain |
-| Database | MongoDB (for future persistence) |
 
 ---
 
