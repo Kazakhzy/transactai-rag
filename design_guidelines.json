@@ -1,0 +1,124 @@
+{
+  "typography": {
+    "font_families": {
+      "headings": "Outfit, sans-serif",
+      "body": "Inter, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "installation": {
+      "google_fonts": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700&display=swap"
+    },
+    "rules": {
+      "headings": "font-bold tracking-tight text-white",
+      "subheadings": "font-medium text-slate-400 tracking-wide uppercase text-xs",
+      "body": "text-slate-300 leading-relaxed",
+      "data": "font-mono text-xs text-cyan-200"
+    }
+  },
+  "colors": {
+    "theme": "dark",
+    "palette": {
+      "background": "#030712",
+      "foreground": "#f8fafc",
+      "card": "rgba(17, 24, 39, 0.4)",
+      "card_border": "rgba(255, 255, 255, 0.08)",
+      "primary": "#38bdf8",
+      "primary_foreground": "#000000",
+      "secondary": "#1e293b",
+      "secondary_foreground": "#f8fafc",
+      "accent": "#00f0ff",
+      "muted": "#334155",
+      "destructive": "#ef4444",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#38bdf8"
+    },
+    "charts": {
+      "chart_1": "#38bdf8",
+      "chart_2": "#2dd4bf",
+      "chart_3": "#818cf8",
+      "chart_4": "#f472b6",
+      "chart_5": "#fbbf24"
+    },
+    "gradients": {
+      "primary_glow": "linear-gradient(135deg, #38bdf8 0%, #2dd4bf 100%)",
+      "glass_surface": "linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%)"
+    }
+  },
+  "visual_enhancers": {
+    "background_image": "https://images.unsplash.com/photo-1764258560300-2346b28b4e7c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGN5YmVyJTIwbmV0d29yayUyMGRhcmslMjBibHVlJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3NzA0NDI0ODJ8MA&ixlib=rb-4.1.0&q=85",
+    "glassmorphism": {
+      "heavy": "backdrop-blur-2xl bg-black/40 border border-white/10 shadow-2xl",
+      "light": "backdrop-blur-md bg-white/5 border border-white/5"
+    },
+    "shadows": {
+      "neon_glow": "0 0 20px rgba(56, 189, 248, 0.3)",
+      "deep_elevation": "0 20px 50px -12px rgba(0, 0, 0, 0.9)"
+    }
+  },
+  "layout_strategies": {
+    "global": "min-h-screen bg-background text-foreground overflow-x-hidden selection:bg-cyan-500/30 selection:text-cyan-100",
+    "hero": {
+      "style": "centered_portal",
+      "description": "A focused, central upload zone. Not a full screen hero. It should feel like a specialized tool interface.",
+      "classes": "flex flex-col items-center justify-center py-20 relative z-10"
+    },
+    "dashboard": {
+      "style": "bento_grid_dense",
+      "grid_classes": "grid grid-cols-1 md:grid-cols-12 gap-6 p-6 md:p-8 max-w-[1600px] mx-auto",
+      "areas": {
+        "summary": "col-span-12 md:col-span-12 lg:col-span-12 grid grid-cols-2 md:grid-cols-4 gap-4",
+        "chart_main": "col-span-12 md:col-span-8 lg:col-span-8 h-[400px]",
+        "chart_side": "col-span-12 md:col-span-4 lg:col-span-4 h-[400px]",
+        "data_table": "col-span-12 h-[500px] overflow-hidden"
+      }
+    },
+    "chat": {
+      "style": "floating_command_center",
+      "container": "fixed bottom-8 left-1/2 -translate-x-1/2 w-[90%] md:w-[600px] lg:w-[800px] z-50",
+      "bubbles": {
+        "user": "bg-slate-800/80 text-white rounded-2xl rounded-tr-sm px-6 py-4 ml-auto max-w-[80%] backdrop-blur-md border border-slate-700",
+        "ai": "bg-gradient-to-br from-cyan-900/40 to-blue-900/40 text-cyan-50 rounded-2xl rounded-tl-sm px-6 py-4 mr-auto max-w-[80%] backdrop-blur-md border border-cyan-500/20 shadow-[0_0_15px_rgba(56,189,248,0.1)]"
+      }
+    }
+  },
+  "components": {
+    "Button": {
+      "default": "rounded-full font-medium transition-all duration-300 hover:scale-105 active:scale-95",
+      "primary": "bg-primary text-primary-foreground hover:shadow-[0_0_20px_rgba(56,189,248,0.4)]",
+      "outline": "border border-slate-700 bg-transparent hover:bg-slate-800 hover:text-white"
+    },
+    "Card": {
+      "base": "rounded-xl border border-white/10 bg-black/40 backdrop-blur-xl shadow-xl overflow-hidden"
+    },
+    "Input": {
+      "base": "bg-slate-900/50 border-slate-700 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/50 rounded-lg transition-all duration-200"
+    }
+  },
+  "assets": {
+    "icons": "lucide-react",
+    "charts": "recharts",
+    "background_texture": "https://images.unsplash.com/photo-1764258560300-2346b28b4e7c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGN5YmVyJTIwbmV0d29yayUyMGRhcmslMjBibHVlJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3NzA0NDI0ODJ8MA&ixlib=rb-4.1.0&q=85"
+  },
+  "instructions_to_main_agent": [
+    "1. INSTALLATION: Run `yarn add framer-motion clsx tailwind-merge` if not present.",
+    "2. SETUP: Add the Google Fonts link to `public/index.html`.",
+    "3. CONFIG: Update `tailwind.config.js` with the colors and fonts defined above. ENSURE `darkMode: 'class'` is set.",
+    "4. THEME: In `src/index.css`, replace the `:root` variables with the dark mode palette provided. DELETE the light mode variables or make them same as dark (Force Dark Mode).",
+    "5. BACKGROUND: Add a global `div` with the background image URL, fixed position, z-index -1, opacity 20% (0.2), and `bg-cover bg-center`. Overlay a radial gradient `bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-transparent via-background/80 to-background` to fade edges.",
+    "6. COMPONENT OVERRIDES: Go through `src/components/ui` and update `card.jsx`, `button.jsx`, `input.jsx` to match the `components` style rules above. Remove default shadcn white backgrounds.",
+    "7. LAYOUT IMPLEMENTATION: Rebuild `App.js`. Use a `Layout` component that handles the background and centered container.",
+    "8. CHAT: Implement the 'Floating Command Center' chat. It should be overlaid at the bottom. Use `AnimatePresence` from framer-motion for bubble entrance animations.",
+    "9. CHARTS: Style Recharts to use the neon palette. remove grid lines or make them very subtle (`#333`). Tooltips should be dark glass.",
+    "10. TABLES: Use a transparent table style. `tr` hover should be `bg-white/5`.",
+    "11. MICRO-INTERACTIONS: Add `whileHover={{ scale: 1.02 }}` to cards using framer-motion."
+  ],
+  "universal_guidelines": [
+    "DO NOT use generic centered text layouts.",
+    "DO NOT use gradients for text unless it's a very large heading.",
+    "Use 'Outfit' font for all Headings (h1-h3). Use 'Inter' for body.",
+    "Ensure all interactive elements have `data-testid` attributes.",
+    "Use `lucide-react` for icons.",
+    "Always use `className` merging with `cn()` utility."
+  ]
+}
